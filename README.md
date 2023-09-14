@@ -207,7 +207,7 @@ We expose the VDD, GND, RESET, SWCLK, and SWDIO pins of the MCU on the back of t
 The last two ones allow for debugging or flashing using [Serial Wire Debug (SWD)](https://community.silabs.com/s/article/serial-wire-debug-swd-x).
 All five circular pads have a spacing of 0.1 in and, hence, the same as common PCB headers.
 
-All ten pads are labelled on the silkscreen of the PCB.
+All five pads are labelled on the silkscreen of the PCB.
 
 ```
 │
