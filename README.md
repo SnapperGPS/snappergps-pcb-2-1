@@ -91,12 +91,12 @@ The main changes from V2.0.0 are:
 
 * The board is a bit smaller with 27.3 mm x 36.4 mm.
 
-* The board (including antenna and batteries) can weight as little as 9.5 g. This is a bit lighter than V2.0.0.
+* The board (including antenna and batteries) can weigh as little as 9.5 g. This is a bit lighter than V2.0.0.
 
 * The board does not have an option to use a thicker 4 mm antenna, just a thinner 2 mm antenna. This reduces signal quality in contrast to V2.0.0 with the 4 mm antenna.
 
 To summarise, V2.1.0 is a little smaller and lighter than V2.0.0 and should probably be the preferred version for deployments where size and weight are crucial.
-However, for deployments with less restrcitive weight/size constraints, V2.0.0 with the 4 mm antenna should probably be preferred to improve signal quality.
+However, for deployments with less restrictive weight/size constraints, V2.0.0 with the 4 mm antenna should probably be preferred to improve signal quality.
 In addition, V2.0.0 is required if a daughter-board shall be connected.
 
 ## Workflow
