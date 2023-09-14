@@ -95,8 +95,8 @@ The main changes from V2.0.0 are:
 
 * The board does not have an option to use a thicker 4 mm antenna, just a thinner 2 mm antenna. This reduces signal quality in contrast to V2.0.0 with the 4 mm antenna.
 
-To summarise, V2.1.0 is a little smaller and lighter than V2.0.0 and should probably be the preferred version for deployments where size and wight are crucial.
-However, for deployments with less restrcitive weight/size constraints, V2.0.0 with the 4 mm should probably be preferred to improve signal quality.
+To summarise, V2.1.0 is a little smaller and lighter than V2.0.0 and should probably be the preferred version for deployments where size and weight are crucial.
+However, for deployments with less restrcitive weight/size constraints, V2.0.0 with the 4 mm antenna should probably be preferred to improve signal quality.
 In addition, V2.0.0 is required if a daughter-board shall be connected.
 
 ## Workflow
@@ -113,8 +113,7 @@ In addition, V2.0.0 is required if a daughter-board shall be connected.
 
 You already have a SnapperGPS receiver?
 See [here](GETTING-STARTED.md) how to get started.
-The instructions are for V1.0.0, but V2.0.0 works very similar.
-For differences, check out [this video](https://youtu.be/bDywcAplRWk).
+The instructions are for V1.0.0, but V2.1.0 works very similar.
 
 You need to build a receiver first? Keep reading.
 
@@ -184,7 +183,7 @@ Measuring the power consumption:
 
 * Configure a SnapperGPS receiver using the SnapperGPS app.
 
-* Power the SnapperGPS receiver from an external DC source with 2.7-3.3 V.
+* Power the SnapperGPS receiver from an external DC source with 3 V.
 
 * Place an ammeter in series with the source.
 
@@ -192,11 +191,11 @@ Measuring the power consumption:
 
 Testing the flash memory:
 
-* Record the maximum of 10901 or 21824 snapshots.
+* Record the maximum of 21824 snapshots.
 
 * Transfer them to a host computer using the *Transfer data* button on the *Upload* page of the SnapperGPS web app.
 
-* Ensure that all 10901 or 21824 snapshots have been transferred and are provided as download.
+* Ensure that all 21824 snapshots have been transferred and are provided as download.
 
 ## Hardware Overview
 
@@ -251,7 +250,7 @@ For one component, you have got two options each to create different SnapperGPS 
 |D1                                            |  1|Rohm Semiconductor            |SML-D12M1WT86                          |LED, yellow-green, 572 nm, 2.2 V                             |0603             |SMD          |                                                                               |https://www.digikey.com/en/products/detail/rohm-semiconductor/SML-D12M1WT86/SML-D12M1WT86CT-ND/5843861 |
 |D2                                            |  1|Rohm Semiconductor            |SML-D12U1WT86                          |LED, red, 620 nm, 2.2 V                                      |0603             |SMD          |                                                                               |https://www.digikey.com/en/products/detail/rohm-semiconductor/SML-D12U1WT86/SML-D12U1WT86CT-ND/5843858 |
 |TCXO1                                         |  1|Connor Winfield               |D32G-016.368M                          |Temperature compensated oscillator, 16.384 MHz               |3.2x2.5          |SMD          |Possible substitutes: EPSON, X1G005441030112 or TXC Corporation, 7Q-16.368MBG-T|https://www.digikey.com/en/products/detail/connor-winfield/D32G-016-368M/3641696                       |
-|U2                                            |  1|Skyworks Solutions Inc.       |SE4150L-R                              |RF receiver                                                  |24-QFN           |SMD          |                                                                               |https://www.digikey.com/en/products/detail/skyworks-solutions-inc/SE4150L-R/863-1354-1-ND/2745473      |
+|U2                                            |  1|Skyworks Solutions Inc.       |SE4150L-R                              |RF receiver                                                  |24-QFN           |SMD          |                                                                               |https://octopart.com/se4150l-r-skyworks+solutions-20439429                                             |
 |SAW1                                          |  1|Abracon LLC                   |AFS20A42-1575.42-T3                    |SAW filter, 1.575 GHz, BW 42 MHz                             |4-SMD            |SMD          |                                                                               |https://www.digikey.com/en/products/detail/abracon-llc/AFS20A42-1575-42-T3/535-12069-1-ND/4075659      |
 |U1                                            |  1|Silicon Labs                  |EFM32HG310F64G-C-QFN32R                |Microcontroller                                              |32-QFN           |SMD          |Possible substitutes: EFM32HG310F64G-A-QFN32R or EFM32HG310F64G-B-QFN32R       |https://www.digikey.com/en/products/detail/silicon-labs/EFM32HG310F64G-C-QFN32R/336-6165-1-ND/10314104 |
 |U3                                            |  1|Nexperia                      |PRTR5V0U2AX,235                        |TVS diode, 5.5 V                                             |SOT143B          |SMD          |                                                                               |https://www.digikey.com/en/products/detail/nexperia-usa-inc/PRTR5V0U2AX235/1727-5862-1-ND/2698064      |
@@ -261,7 +260,7 @@ For one component, you have got two options each to create different SnapperGPS 
 |ANT1                                          |  1|Taoglas                       |GP.1575.25.2.A.02                      |GPS/GALILEO patch antenna                                    |25x25            |through-hole |                                                                               |https://www.digikey.com/en/products/detail/taoglas-limited/GP-1575-25-2-A-02/2332643                   |
 |U6                                            |  1|Texas Instruments             |TPS61291DRVT                           |Boost Switching Regulator IC                                 |6-WSON           |SMD          |                                                                               |https://www.digikey.com/en/products/detail/texas-instruments/TPS61291DRVT/5012070                      |
 |U7                                            |  1|Taiyo Yuden                   |MDMK2020T3R3MM                         |Fixed inductor, 3.3 uH, 1.15 A, 178 MOhm                     |2x2              |SMD          |                                                                               |https://www.digikey.com/en/products/detail/taiyo-yuden/MDMK2020T3R3MM/3479456                          |
-|J4, J5                                        |  2|Keystone Electronics *or* Hong Kong CCD|2996 *or* 704833              |Battery holder (LR44/SR44 *or* LR41/SR41)                    |                 |             |Possible substitute: Keystone Electronics, 2996TR                              |https://www.digikey.com/en/products/detail/keystone-electronics/2996TR/2746493 *or* https://www.aliexpress.com/item/32742124807.html |
+|J4, J5                                        |  2|Keystone Electronics *or* Hong Kong CCD|2996 *or* 704833              |Battery holder (LR44/SR44 *or* LR41/SR41)                    |                 |SMD          |Possible substitute: Keystone Electronics, 2996TR                              |https://www.digikey.com/en/products/detail/keystone-electronics/2996TR/2746493 *or* https://www.aliexpress.com/item/32742124807.html|
 |                                              |   |                              |                                       |                                                             |                 |             |                                                                               |                                                                                                       |
 
 The BOM differs slightly from the one for initial SnapperGPS test boards, which was cheaper.
