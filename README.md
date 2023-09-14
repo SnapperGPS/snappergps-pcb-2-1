@@ -39,6 +39,9 @@ For the cloud-processing software:
 > Jonas Beuchert and Alex Rogers. 2021. SnapperGPS: Algorithms for Energy-Efficient Low-Cost Location Estimation Using GNSS Signal Snapshots. In SenSys ’21: ACM Conference on Embedded Networked Sensor Systems, November, 2021, Coimbra, Portugal. ACM, New York, NY, USA, 13 pages. https://doi.org/10.1145/3485730.3485931.
 
 
-| ![SnapperGPS PCB](images/yellow-top.png) ![SnapperGPS PCB](images/yellow-bottom.png) ![SnapperGPS PCB](images/yellow-bottom-lr41.png) | 
+| ![SnapperGPS PCB](images/yellow.png) | 
 |:--:| 
-| *Figure 1: Bottom and top view of a SnapperGPS receiver V2.1.0.* |
+| *Figure 1: Top view (left) and bottom views (centre, right) of assembled SnapperGPS
+receivers V2.1.0 with a passive ceramic patch antenna and holders for two LR44 or SR44
+button cells (centre) or two LR41 or SR41 button cells (right). This version is similar to
+V2.0.0, but does not come with GPIOs or a connector for an external antenna.* |
