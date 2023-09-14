@@ -41,7 +41,4 @@ For the cloud-processing software:
 
 | ![SnapperGPS PCB](images/yellow.png) | 
 |:--:| 
-| *Figure 1: Top view (left) and bottom views (centre, right) of assembled SnapperGPS
-receivers V2.1.0 with a passive ceramic patch antenna and holders for two LR44 or SR44
-button cells (centre) or two LR41 or SR41 button cells (right). This version is similar to
-V2.0.0, but does not come with GPIOs or a connector for an external antenna.* |
+| *Figure 1: Top view (left) and bottom views (centre, right) of assembled SnapperGPS receivers V2.1.0 with a passive ceramic patch antenna and holders for two LR44 or SR44 button cells (centre) or two LR41 or SR41 button cells (right). This version is similar to V2.0.0, but does not come with GPIOs or a connector for an external antenna.* |
